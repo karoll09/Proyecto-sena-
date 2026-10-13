@@ -20,7 +20,7 @@ if (fs.existsSync(configPath)) {
 
 // Vite config — https://vitejs.dev
 export default defineConfig(({ mode }) => {
-  // .figma/make/deploy-preview passes `--mode development` for cached-preview builds.
+  // .figma/make/deploy-preview passes `--mode development` for cached-preview builds
   const emitSourcemaps = mode === 'development'
 
   return {
